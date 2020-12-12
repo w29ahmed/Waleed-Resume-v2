@@ -28,7 +28,7 @@
 %% See http://texdoc.net/pkg/fontawesome5 and http://texdoc.net/pkg/academicons for full list of symbols. You MUST compile with XeLaTeX or LuaLaTeX if you want to use academicons.
 
 % Change the page layout if you need to
-\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+\geometry{left=1.25cm,right=1.25cm,top=1.25cm,bottom=1.25cm,columnsep=1.2cm}
 
 % The paracol package lets you typeset columns of text in parallel
 \usepackage{paracol}
@@ -68,15 +68,12 @@
 \renewcommand{\itemmarker}{{\small\textbullet}}
 \renewcommand{\ratingmarker}{\faCircle}
 
-%% sample.bib contains your publications
-\addbibresource{sample.bib}
-
 \begin{document}
 \name{Marissa Mayer}
 \tagline{Business Woman \& Proud Geek}
 % Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
 %% You can add multiple photos on the left or right
-\photoR{2.5cm}{mmayer-wikipedia-cc-by-2_0}
+% \photoR{2.5cm}{mmayer-wikipedia-cc-by-2_0}
 % \photoL{2cm}{Yacht_High,Suitcase_High}
 \personalinfo{%
   % Not all of these are required!
@@ -170,24 +167,6 @@
   5/8em/accent!20/Baking cupcakes
 }
 
-% use ONLY \newpage if you want to force a page break for
-% ONLY the currentc column
-\newpage
-
-\cvsection{Publications}
-
-\nocite{*}
-
-\printbibliography[heading=pubtype,title={\printinfo{\faBook}{Books}},type=book]
-
-\divider
-
-\printbibliography[heading=pubtype,title={\printinfo{\faFile*[regular]}{Journal Articles}}, type=article]
-
-\divider
-
-\printbibliography[heading=pubtype,title={\printinfo{\faUsers}{Conference Proceedings}},type=inproceedings]
-
 %% Switch to the right column. This will now automatically move to the second
 %% page if the content is too long.
 \switchcolumn
@@ -243,19 +222,6 @@
 \divider
 
 \cvevent{B.S.\ in Symbolic Systems}{Stanford University}{Sept 1993 -- June 1997}{}
-
-\newpage
-
-\cvsection{Referees}
-
-% \cvref{name}{email}{mailing address}
-\cvref{Prof.\ Alpha Beta}{Institute}{a.beta@university.edu}
-{Address Line 1\\Address line 2}
-
-\divider
-
-\cvref{Prof.\ Gamma Delta}{Institute}{g.delta@university.edu}
-{Address Line 1\\Address line 2}
 
 \end{paracol}
 
