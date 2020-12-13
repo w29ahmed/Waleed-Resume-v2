@@ -28,7 +28,7 @@
 %% See http://texdoc.net/pkg/fontawesome5 and http://texdoc.net/pkg/academicons for full list of symbols. You MUST compile with XeLaTeX or LuaLaTeX if you want to use academicons.
 
 % Change the page layout if you need to
-\geometry{left=1.25cm,right=1.25cm,top=1.25cm,bottom=1.25cm,columnsep=1.2cm}
+\geometry{left=1cm,right=1.25cm,top=1.25cm,bottom=1.25cm,columnsep=1cm}
 
 % The paracol package lets you typeset columns of text in parallel
 \usepackage{paracol}
@@ -104,68 +104,80 @@
 \AtBeginEnvironment{itemize}{\small}
 
 %% Set the left/right column width ratio to 6:4.
-\columnratio{0.6}
+\columnratio{0.63}
 
 % Start a 2-column paracol. Both the left and right columns will automatically
 % break across pages if things get too long.
 \begin{paracol}{2}
 
+\cvsection{Skills}
+\cvtag{C++}
+\cvtag{C}
+\cvtag{Python}
+\cvtag{C\#}
+\cvtag{Java}
+\cvtag{QML}
+\cvtag{Verilog}
+\cvtag{JavaScript}
+
+\divider
+
+\cvtag{OpenCV}
+\cvtag{ROS}
+\cvtag{Qt}
+\cvtag{.NET}
+\cvtag{Flask}
+\cvtag{TensorFlow}
+\cvtag{GTest}
+
+\divider
+
+\cvtag{Git}
+\cvtag{SVN}
+\cvtag{Perforce}
+\cvtag{Linux}
+\cvtag{QNX}
+\cvtag{Jenkins}
+\cvtag{Docker}
+\cvtag{Jira}
+
 \cvsection{Experience}
 
-\cvevent{President \& CEO}{Yahoo!}{July 2012 -- Ongoing}{Sunnyvale, CA}
+\cvevent{Autonomous Vehicles Software Engineering Intern}{Huawei}{Sep 2020 -- Present}{Toronto, ON}
 \begin{itemize}
-\item Led the \$5 billion acquisition of the company with Verizon -- the entity which believed most in the immense value Yahoo!\ has created
-\item Acquired Tumblr for \$1.1 billion and moved the company's blog there
-\item Built Yahoo's mobile, video and social businesses from nothing in 2011 to \$1.6 billion in GAAP revenue in 2015
-\item Tripled the company's mobile base to over 600 million monthly active users and generated over \$1 billion of mobile advertising revenue last year
+\item Motion planning research and development for a level 4+ system
+\item ehui asudhsahduiasdh ashdsa
+\item sauyhd saiudhasy udhsad as
+\item ayhsd guaysdysa gdsa
 \end{itemize}
-
 \divider
 
-\cvevent{Vice President of Location \& Services}{Google}{Oct 2010 -- July 2012}{Palo Alto, CA}
+\cvevent{Automotive ADAS Software Engineering Intern}{Qualcomm}{Jan 2020 -- Apr 2020}{Toronto, ON}
 \begin{itemize}
-\item Position Google Maps as the world leader in mobile apps and navigation
-\item Oversaw 1000+ engineers and product managers working on Google Maps, Google Places and Google Earth
+\item Developed system and application software for an ADAS \& autonomous driving platform in \textbf{C/C++}
+\item Accelerated performance of a \href{https://developer.qualcomm.com/software/fastcv-sdk}{\textbf{computer vision SDK}} by an average of \textbf{20x} by leveraging available hardware and software architecture in automotive focused Snapdragon SoCs
 \end{itemize}
-
 \divider
 
-\cvevent{Vice President of Search Products \& UX}{Google}{2005 --  2010}{Palo Alto, CA}
-
+\cvevent{Software Engineering Intern}{Christie Digital}{May 2019 -- Aug 2019}{Kitchener, ON}
+\begin{itemize}
+\item Worked closely with QA and UI/UX designers for user interface development and maintenance to meet release deadlines across a wide variety of platforms using the \textbf{Qt} framework in \textbf{C++} and \textbf{QML}
+\item Significantly reduced the effort needed to maintain code health through software architecture redesign and setup of a continuous integration pipeline on a \textbf{Jenkins} build server that included unit tests with \textbf{90\%} code coverage using \textbf{Google Test}
+\end{itemize}
 \divider
 
-\cvevent{Product Manager \& UI Lead}{Google}{Oct 2001 -- July 2005}{Palo Alto, CA}
-
+\cvevent{Video Software Engineering Intern}{Synaptive Medical}{Sep 2018 -- Dec 2018}{Toronto, ON}
 \begin{itemize}
-\item Appointed by the founder Larry Page in 2001 to lead the Product Management and User Interaction teams
-\item Optimized Google's homepage and A/B tested every minor detail to increase usability (incl.~spacing between words, color schemes and pixel-by-pixel element alignment)
+\item Improved visibility of biological tissue during surgical procedures through colour manipulation using \textbf{C++ (OpenCV)} and \textbf{C\#}
+\item Post-processed image data in \textbf{Python} using \textbf{Pandas}, \textbf{Numpy}, and \textbf{Matplotlib} to analyze colour manipulation
 \end{itemize}
+\divider
 
-% \divider
-
-% \cvevent{Product Engineer}{Google}{23 June 1999 -- 2001}{Palo Alto, CA}
-
-% \begin{itemize}
-% \item Joined the company as employe \#20 and female employee \#1
-% \item Developed targeted advertisement in order to use user's search queries and show them related ads
-% \end{itemize}
-
-\cvsection{A Day of My Life}
-
-% Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
-% \wheelchart{outer radius}{inner radius}{
-% comma-separated list of value/text width/color/detail}
-% Some ad-hoc tweaking to adjust the labels so that they don't overlap
-\hspace*{-1em}  %% quick hack to move the wheelchart a bit left
-\wheelchart{1.5cm}{0.5cm}{%
-  10/13em/accent!30/Sleeping \& dreaming about work,
-  25/9em/accent!60/Public resolving issues with Yahoo!\ investors,
-  5/11em/accent!10/\footnotesize\\[1ex]New York \& San Francisco Ballet Jawbone board member,
-  20/11em/accent!40/Spending time with family,
-  5/8em/accent!20/\footnotesize Business development for Yahoo!\ after the Verizon acquisition,
-  30/9em/accent/Showing Yahoo!\ \mbox{employees} that their work has meaning,
-  5/8em/accent!20/Baking cupcakes
-}
+\cvevent{Industrial Imaging Software Engineering Intern}{ P\&P Optica}{Jan 2018 -- Apr 2018}{Waterloo, ON}
+\begin{itemize}
+\item Developed a robust image acquisition framework for rapid line scan imaging of an industrial conveyor belt in the food industry
+\item Implemented image correction algorithms and post-processing for industrial cameras in \textbf{Python} using \textbf{Numpy}, \textbf{OpenCV}, and \textbf{Matplotlib}
+\end{itemize}
 
 %% Switch to the right column. This will now automatically move to the second
 %% page if the content is too long.
