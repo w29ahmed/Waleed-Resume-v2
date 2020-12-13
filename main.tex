@@ -68,6 +68,36 @@
 \renewcommand{\itemmarker}{{\small\textbullet}}
 \renewcommand{\ratingmarker}{\faCircle}
 
+% Commands to include a company logo for each /cvevent 
+\newcommand{\companylogo}[3]
+  {\ifthenelse{\equal{#2}{}}{\hfill}{\hspace{#2}}\raisebox{-1.75\baselineskip}[0pt][0pt]%
+    {\href{#3}{\includegraphics[height=2.0\baselineskip]{#1}}}}
+
+\newcommand{\ecelogo}[1]
+  {\ifthenelse{\equal{#1}{}}{\hfill}{\hspace{#1}}\raisebox{-1.75\baselineskip}[0pt][0pt]%
+    {\includegraphics[height=2.0\baselineskip]{pictures/ece_Logo.png}}}
+
+\newcommand{\uwlogo}[3]
+  {\ifthenelse{\equal{#2}{}}{\hfill}{\hspace{#2}}\raisebox{-0.4\baselineskip}[0pt][0pt]%
+    {\href{#3}{\includegraphics[height=2.0\baselineskip]{#1}}}}
+    
+\newcommand{\huaweilogo}[3]
+  {\ifthenelse{\equal{#2}{}}{\hfill}{\hspace{#2}}\raisebox{-1.75\baselineskip}[0pt][0pt]%
+    {\href{#3}{\includegraphics[scale = 0.03]{#1}}}}
+    
+\newcommand{\qualcommlogo}[3]
+  {\ifthenelse{\equal{#2}{}}{\hfill}{\hspace{#2}}\raisebox{-1.75\baselineskip}[0pt][0pt]%
+    {\href{#3}{\includegraphics[scale = 0.075]{#1}}}}
+    
+\newcommand{\christielogo}[3]
+  {\ifthenelse{\equal{#2}{}}{\hfill}{\hspace{#2}}\raisebox{-1\baselineskip}[0pt][0pt]%
+    {\href{#3}{\includegraphics[scale = 0.15]{#1}}}}
+% [height=2.0\baselineskip, width=5.0\baselineskip]
+
+\newcommand{\projectlogo}[2]
+  {\hfill\raisebox{-1\baselineskip}[0pt][0pt]%
+    {\href{#2}{\includegraphics[height=2\baselineskip]{#1}}}}
+
 \begin{document}
 \name{WALEED \textcolor{accent}{AHMED}}
 % \tagline{3B Computer Engineering}
@@ -143,7 +173,7 @@
 
 \cvsection{Experience}
 
-\cvevent{Autonomous Vehicles Software Engineering Intern}{Huawei}{Sep 2020 -- Present}{Toronto, ON}
+\cvevent{Autonomous Vehicles Software Engineering Intern \huaweilogo{img/Huawei_Logo.png}{}{https://www.huawei.com/ca/}}{Huawei}{Sep 2020 -- Dec 2020}{Toronto, ON}
 \begin{itemize}
 \item Motion planning research and development for a level 4+ system
 \item ehui asudhsahduiasdh ashdsa
@@ -152,28 +182,28 @@
 \end{itemize}
 \divider
 
-\cvevent{Automotive ADAS Software Engineering Intern}{Qualcomm}{Jan 2020 -- Apr 2020}{Toronto, ON}
+\cvevent{Automotive ADAS Software Engineering Intern \qualcommlogo{img/Qualcomm_Logo.png}{11mm}{https://www.qualcomm.com/}}{Qualcomm}{Jan 2020 -- Apr 2020}{Toronto, ON}
 \begin{itemize}
 \item Developed system and application software for an ADAS \& autonomous driving platform in \textbf{C/C++}
 \item Accelerated performance of a \href{https://developer.qualcomm.com/software/fastcv-sdk}{\textbf{computer vision SDK}} by an average of \textbf{20x} by leveraging available hardware and software architecture in automotive focused Snapdragon SoCs
 \end{itemize}
 \divider
 
-\cvevent{Software Engineering Intern}{Christie Digital}{May 2019 -- Aug 2019}{Kitchener, ON}
+\cvevent{Software Engineering Intern \christielogo{img/Christie_Logo.jpg}{}{https://www.christiedigital.com/}}{Christie Digital}{May 2019 -- Aug 2019}{Kitchener, ON}
 \begin{itemize}
 \item Worked closely with QA and UI/UX designers for user interface development and maintenance to meet release deadlines across a wide variety of platforms using the \textbf{Qt} framework in \textbf{C++} and \textbf{QML}
 \item Significantly reduced the effort needed to maintain code health through software architecture redesign and setup of a continuous integration pipeline on a \textbf{Jenkins} build server that included unit tests with \textbf{90\%} code coverage using \textbf{Google Test}
 \end{itemize}
 \divider
 
-\cvevent{Video Software Engineering Intern}{Synaptive Medical}{Sep 2018 -- Dec 2018}{Toronto, ON}
+\cvevent{Video Software Engineering Intern \companylogo{img/Synaptive_Logo.jpg}{34mm}{https://www.synaptivemedical.com/}}{Synaptive Medical}{Sep 2018 -- Dec 2018}{Toronto, ON}
 \begin{itemize}
 \item Improved visibility of biological tissue during surgical procedures through colour manipulation using \textbf{C++ (OpenCV)} and \textbf{C\#}
 \item Post-processed image data in \textbf{Python} using \textbf{Pandas}, \textbf{Numpy}, and \textbf{Matplotlib} to analyze colour manipulation
 \end{itemize}
 \divider
 
-\cvevent{Industrial Imaging Software Engineering Intern}{ P\&P Optica}{Jan 2018 -- Apr 2018}{Waterloo, ON}
+\cvevent{Industrial Imaging Software Engineering Intern \companylogo{img/PPO_Logo.png}{}{https://ppo.ca/}}{P\&P Optica}{Jan 2018 -- Apr 2018}{Waterloo, ON}
 \begin{itemize}
 \item Developed a robust image acquisition framework for rapid line scan imaging of an industrial conveyor belt in the food industry
 \item Implemented image correction algorithms and post-processing for industrial cameras in \textbf{Python} using \textbf{Numpy}, \textbf{OpenCV}, and \textbf{Matplotlib}
