@@ -75,11 +75,11 @@
 
 \newcommand{\ecelogo}[1]
   {\ifthenelse{\equal{#1}{}}{\hfill}{\hspace{#1}}\raisebox{-1.75\baselineskip}[0pt][0pt]%
-    {\includegraphics[height=2.0\baselineskip]{pictures/ece_Logo.png}}}
+    {\includegraphics[height=2.0\baselineskip]{img/ece_Logo.png}}}
 
 \newcommand{\uwlogo}[3]
-  {\ifthenelse{\equal{#2}{}}{\hfill}{\hspace{#2}}\raisebox{-0.4\baselineskip}[0pt][0pt]%
-    {\href{#3}{\includegraphics[height=2.0\baselineskip]{#1}}}}
+  {\ifthenelse{\equal{#2}{}}{\hfill}{\hspace{#2}}\raisebox{-0.1\baselineskip}[0pt][0pt]%
+    {\href{#3}{\includegraphics[scale = 0.17]{#1}}}}
     
 \newcommand{\huaweilogo}[3]
   {\ifthenelse{\equal{#2}{}}{\hfill}{\hspace{#2}}\raisebox{-1.75\baselineskip}[0pt][0pt]%
@@ -143,37 +143,46 @@
 \cvsection{Skills}
 \cvtag{C++}
 \cvtag{C}
-\cvtag{Python}
-\cvtag{C\#}
-\cvtag{Java}
-\cvtag{QML}
-\cvtag{Verilog}
 \cvtag{JavaScript}
+\cvtag{Python}
+\cvtag{Java}
+\cvtag{C\#}
+\cvtag{HTML}
+\cvtag{CSS}
+\cvtag{Assembly}
+% \cvtag{QML}
+% \cvtag{Verilog}
 
 \divider
 
-\cvtag{OpenCV}
 \cvtag{ROS}
+\cvtag{OpenCV}
 \cvtag{Qt}
-\cvtag{.NET}
+\cvtag{Node}
+\cvtag{React}
+\cvtag{Express}
+\cvtag{MongoDB}
 \cvtag{Flask}
-\cvtag{TensorFlow}
-\cvtag{GTest}
+% \cvtag{.NET}
+% \cvtag{Google Test}
+% \cvtag{TensorFlow}
+% \cvtag{GTest}
 
 \divider
 
 \cvtag{Git}
-\cvtag{SVN}
-\cvtag{Perforce}
 \cvtag{Linux}
 \cvtag{QNX}
+\cvtag{Perforce}
+\cvtag{SVN}
 \cvtag{Jenkins}
 \cvtag{Docker}
+\cvtag{LaTeX}
 \cvtag{Jira}
 
 \cvsection{Experience}
 
-\cvevent{Autonomous Vehicles Software Engineering Intern \huaweilogo{img/Huawei_Logo.png}{}{https://www.huawei.com/ca/}}{Huawei}{Sep 2020 -- Dec 2020}{Toronto, ON}
+\cvevent{Autonomous Vehicles Software Engineering Intern \huaweilogo{img/Huawei_Logo.png}{7mm}{https://www.huawei.com/ca/}}{Huawei}{Sep 2020 -- Dec 2020}{Toronto, ON}
 \begin{itemize}
 \item Developed a unit test suite for a Fren\'et frame motion planning stack with \textbf{90\%} code coverage using \textbf{Google Test}
 \item Designed and implemented a path building library using \textbf{C++} to aid in construction of a wide variety of reference paths to test motion planning algorithms on
@@ -181,7 +190,7 @@
 \end{itemize}
 \divider
 
-\cvevent{Automotive ADAS Software Engineering Intern \qualcommlogo{img/Qualcomm_Logo.png}{11mm}{https://www.qualcomm.com/}}{Qualcomm}{Jan 2020 -- Apr 2020}{Toronto, ON}
+\cvevent{Automotive ADAS Software Engineering Intern \qualcommlogo{img/Qualcomm_Logo.png}{13mm}{https://www.qualcomm.com/}}{Qualcomm}{Jan 2020 -- Apr 2020}{Toronto, ON}
 \begin{itemize}
 \item Developed system and application software for an ADAS \& autonomous driving platform in \textbf{C/C++}
 \item Accelerated performance of a \href{https://developer.qualcomm.com/software/fastcv-sdk}{\textbf{computer vision SDK}} by an average of \textbf{20x} by leveraging available hardware and software architecture in automotive focused Snapdragon SoCs
@@ -196,21 +205,21 @@
 \end{itemize}
 \divider
 
-\cvevent{Video Software Engineering Intern \companylogo{img/Synaptive_Logo.jpg}{34mm}{https://www.synaptivemedical.com/}}{Synaptive Medical}{Sep 2018 -- Dec 2018}{Toronto, ON}
+\cvevent{Video Software Engineering Intern \companylogo{img/Synaptive_Logo.jpg}{37mm}{https://www.synaptivemedical.com/}}{Synaptive Medical}{Sep 2018 -- Dec 2018}{Toronto, ON}
 \begin{itemize}
-\item Improved visibility of biological tissue during surgical procedures through colour manipulation using \textbf{C++ (OpenCV)} and \textbf{C\#}
-\item Post-processed image data in \textbf{Python} using \textbf{Pandas}, \textbf{Numpy}, and \textbf{Matplotlib} to analyze colour manipulation
+\item Improved visibility of biological tissue during surgical procedures through color manipulation using \textbf{C++ (OpenCV)} and \textbf{C\#}
+\item Post-processed image data in \textbf{Python} using \textbf{Pandas}, \textbf{Numpy}, and \textbf{Matplotlib} to analyze color manipulation
 % \item Facilitated full control of camera settings through a \textbf{.NET} application that served as a frontend interface to a serial communication protocol
-% \item Enabled intuitive usage of a colour manipulation algorithm through a web interface built with \textbf{JavaScript}, \textbf{HTML}, and \textbf{CSS}
+% \item Enabled intuitive usage of a color manipulation algorithm through a web interface built with \textbf{JavaScript}, \textbf{HTML}, and \textbf{CSS}
 % \item Used \textbf{C\#} to integrate image processing algorithms with existing software architecture in a Windows environment
 \end{itemize}
 \divider
 
 \cvevent{Industrial Imaging Software Engineering Intern \companylogo{img/PPO_Logo.png}{}{https://ppo.ca/}}{P\&P Optica}{Jan 2018 -- Apr 2018}{Waterloo, ON}
 \begin{itemize}
-\item Developed a robust image acquisition framework for rapid line scan imaging of an industrial conveyor belt in the food industry
+\item Developed a robust image acquisition framework for rapid line scan imaging of food on an industrial conveyor belt
 \item Implemented image correction algorithms and post-processing for industrial cameras in \textbf{Python} using \textbf{Numpy}, \textbf{OpenCV}, and \textbf{Matplotlib}
-% \item Developed software on \textbf{Linux} machines for industrial imaging applications with \textbf{Git} version control in an \textbf{agile} environment 
+% \item Developed software on \textbf{Linux} machines for industrial imaging applications with \textbf{Git} version control in an \textbf{agile} environment https://www.overleaf.com/project/5fd54239842ff43e75a4fea5
 % \item Refactored data handling modules for efficient file input/output and wrote unit tests for them in \textbf{Python} using Pytest
 % \item Restructured camera control modules in \textbf{C} that use the Camera Link serial protocol to interface with the camera for control purposes
 % \item Refactored data handling modules for efficient file input/output
@@ -247,11 +256,11 @@
 \end{itemize}
 \divider
 
-% \cveventwithgit{Bicycle Sensor \ecelogo{7.7em}}{{ECE 298 Course Project}}{Dec 2019}{}{\href{https://github.com/w29ahmed/ECE298-Bicycle-Sensor}{github.com/w29ahmed/Bicycle-Sensor}}
-% \begin{itemize}
-% \item Designed hardware and software for an ultrasonic object detection module
-% \end{itemize}
-% \divider
+\cveventwithgit{Bicycle Sensor \ecelogo{27mm}}{{ECE 298 Course Project}}{Dec 2019}{}{\href{https://github.com/w29ahmed/ECE298-Bicycle-Sensor}{github.com/w29ahmed/Bicycle-Sensor}}
+\begin{itemize}
+\item Designed hardware and software for an ultrasonic object detection module
+\end{itemize}
+\divider
 
 \cveventwithgit{Agilite \companylogo{img/Agilite_Logo.png}{}{https://devpost.com/software/agilite}}{\href{https://www.deltahacks.com/}{DeltaHacks V}}{Jan 2019}{}{\href{https://github.com/w29ahmed/Agilite}{github.com/w29ahmed/Agilite}}
 \begin{itemize}
